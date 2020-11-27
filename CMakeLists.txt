@@ -90,6 +90,7 @@ endif()
 # Compiler specific configuration
 ################################################################################
 
+find_package(OpenCV 3.4.2 EXACT REQUIRED)
 
 if(CMAKE_BUILD_TYPE)
     message(STATUS "Build type specified as ${CMAKE_BUILD_TYPE}")

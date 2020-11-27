@@ -31,7 +31,7 @@ set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 SET(VSLAM_IMPL_TYPE "ORB_SLAM2")
 
 # Fix to avoid OpenCV package confusion with ROS melodic
-find_package(OpenCV 3.2 EXACT QUIET)
+find_package(OpenCV 3.4.2 EXACT QUIET)
 if (NOT OpenCV_FOUND)
 	find_package(OpenCV 3 REQUIRED)
 endif()
